@@ -69,7 +69,7 @@ contract CCQueryUC is UniversalChanIbcApp {
         // This contract will need to be sending and acknowledging packets and not receiving them to complete the challenge
         // The reference implemention of onRecvUniversalPacket on the base contract you will be calling is below
 
-        /*
+        
         recvedPackets.push(UcPacketWithChannel(channelId, packet));
         uint64 _counter = getCounter();
 
@@ -92,7 +92,7 @@ contract CCQueryUC is UniversalChanIbcApp {
 
             return AckPacket(true, abi.encode(_ackData));
         }
-        */
+        
     }
 
     /**
